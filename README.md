@@ -1,10 +1,10 @@
 # DQLAB Bootcamp Machine Learning Batch 7 - Heart Disease Prediction Dashboard
 
-![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/img/Screenshot%202023-10-21%20185018.png)
+![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/Screenshot%202023-10-21%20185018.png)
 
-![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/img/Screenshot%202023-10-21%20185046.png)
+![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/Screenshot%202023-10-21%20185046.png)
 
-![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/img/Screenshot%202023-10-21%20185108.png)
+![Dashboard Preview](https://github.com/utamadonny/HeartDiseasePrediction/blob/main/Screenshot%202023-10-21%20185108.png)
 
 This interactive dashboard is a project created as part of the DQLAB Bootcamp Machine Learning Batch 7. It is designed to provide insights into heart disease prediction using machine learning. The project allows users to explore data related to heart disease, perform exploratory data analysis (EDA), and make predictions with machine learning models.
 
