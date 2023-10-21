@@ -4,6 +4,22 @@ import pickle
 import time
 from PIL import Image
 
+image0 = Image.open("img\Screenshot 2023-10-21 175443.png")
+image1 = Image.open("img\Screenshot 2023-10-21 181250.png")
+image2 = Image.open("img\Screenshot 2023-10-21 181607.png")
+image3 = Image.open("img\outlier.png")
+image4 = Image.open("img\outlier2.png")
+image5 = Image.open("img\dsit_gender.png")
+image6 = Image.open("img\dist_age.png")
+image7 = Image.open("img\dist_chol.png")
+image8 = Image.open("img\dist_target.png")
+image9 = Image.open("img\dist_num_var.png")
+image10 = Image.open("img\dis_cat_var.png")
+image11 = Image.open("img\corr1.png")
+image12 = Image.open("img\corr2.png")
+image13 = Image.open("img\corrheat.png")
+image14 = Image.open("img\sort_corr.png")
+
 st.set_page_config(page_title="Halaman Modelling", layout="wide")
 st.write("""
 # Welcome to my machine learning dashboard
@@ -138,7 +154,7 @@ data = pd.read_csv(url, names=column_names, skiprows=[0])
 data.head()
 ```
  """)
-    st.image("img\Screenshot 2023-10-21 175443.png")
+    st.image(image0)
 
     st.write(
     """
@@ -243,7 +259,7 @@ print("Missing Value Summary:\\n", data.isnull().sum())
 ```
 """
     )
-    st.image ("img\Screenshot 2023-10-21 181250.png")
+    st.image (image1)
     st. write("""
  To handle missing values in the dataset, the mode (most frequent value) of the respective columns is used for imputation. Here's how it was done:
 
@@ -265,46 +281,46 @@ print("Missing Value Summary:\\n", data.isnull().sum())
 
     This method ensures that missing values are replaced with the most common values in the respective columns, maintaining data integrity.              
     """)         
-    st.image("img\Screenshot 2023-10-21 181607.png")
+    st.image(image2)
     st.write(" - Outliers and boxplot")
-    st.image("img\outlier.png")
-    st.image("img\outlier2.png")
+    st.image(image3)
+    st.image(image4)
     st.write(""" 
 --- 
 ##  **Data Distributions**
 After conducting exploratory data analysis (EDA), here's an overview of data distributions:
 - **Gender Distribution:**
     """)
-    st.image("img\dsit_gender.png")
+    st.image(image5)
 
     st.write(" - **Age Distribution:**")
-    st.image("img\dist_age.png")
+    st.image(image6)
     
     st.write(" - **Serum Cholesterol (Chol) Distribution:**")
-    st.image("img\dist_chol.png")
+    st.image(image7)
 
     st.write(" - **Target Distribution:**")
-    st.image("img\dist_target.png")
+    st.image(image8)
 
     st.write(" - **Numerical Variable Distribution:**")
-    st.image("img\dist_num_var.png")
+    st.image(image9)
 
     st.write(" - **Categorical Variable Distribution:**")
-    st.image("img\dis_cat_var.png")
+    st.image(image10)
 
     st.write("""
 - **Distribution of Patients Based on Stress Level and Maximum Heart Rate:**
     """)
-    st.image("img\corr1.png")
+    st.image(image11)
 
     st.write(" - **Distribution of Patients Based on Stress Level and Blood Pressure:**")
-    st.image("img\corr2.png")
+    st.image(image12)
     st.write("""
 ## **Feature Selection and Correlation Analysis**
 Feature selection is a crucial step in building predictive models for heart disease. It involves identifying the most influential variables and understanding their correlations with the target variable (heart disease). Here are the key findings:
 """)
-    st.image("img\corrheat.png")
-    st.image("img\sort_corr.png")
+    st.image(image13)
+    st.image(image14)
     st.write("""
 - **Correlation with Target (Heart Disease):**
     - **Negative Strong Correlation:**
@@ -389,7 +405,7 @@ def heart():
             return features
     
     input_df = user_input_features()
-    img = Image.open("img\\heart-disease.jpg")
+    img = Image.open("img\heart-disease.jpg")
     st.image(img, width=500)
     if st.sidebar.button('Predict!'):
         df = input_df
