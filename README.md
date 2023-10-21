@@ -34,6 +34,10 @@ The dataset used in this project is the [Heart Disease dataset](https://archive.
 - Python: For data analysis and machine learning.
 - Scikit-learn: For creating machine learning models.
 
+## Deployment
+
+- [Streamlit](https://heartdiseasepredictionn.streamlit.app/)
+
 ## Author
 
 - [Donny Prakarsa Utama | LinkedIn](https://www.linkedin.com/in/utamadonny/)
