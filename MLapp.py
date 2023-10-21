@@ -4,21 +4,22 @@ import pickle
 import time
 from PIL import Image
 
-image0 = Image.open("img\Screenshot 2023-10-21 175443.png")
-image1 = Image.open("img\Screenshot 2023-10-21 181250.png")
-image2 = Image.open("img\Screenshot 2023-10-21 181607.png")
-image3 = Image.open("img\outlier.png")
-image4 = Image.open("img\outlier2.png")
-image5 = Image.open("img\dsit_gender.png")
-image6 = Image.open("img\dist_age.png")
-image7 = Image.open("img\dist_chol.png")
-image8 = Image.open("img\dist_target.png")
-image9 = Image.open("img\dist_num_var.png")
-image10 = Image.open("img\dis_cat_var.png")
-image11 = Image.open("img\corr1.png")
-image12 = Image.open("img\corr2.png")
-image13 = Image.open("img\corrheat.png")
-image14 = Image.open("img\sort_corr.png")
+img = Image.open("heart-disease.jpg")
+image0 = Image.open("Screenshot 2023-10-21 175443.png")
+image1 = Image.open("Screenshot 2023-10-21 181250.png")
+image2 = Image.open("Screenshot 2023-10-21 181607.png")
+image3 = Image.open("outlier.png")
+image4 = Image.open("outlier2.png")
+image5 = Image.open("dsit_gender.png")
+image6 = Image.open("dist_age.png")
+image7 = Image.open("dist_chol.png")
+image8 = Image.open("dist_target.png")
+image9 = Image.open("dist_num_var.png")
+image10 = Image.open("dis_cat_var.png")
+image11 = Image.open("corr1.png")
+image12 = Image.open("corr2.png")
+image13 = Image.open("corrheat.png")
+image14 = Image.open("sort_corr.png")
 
 st.set_page_config(page_title="Halaman Modelling", layout="wide")
 st.write("""
@@ -405,7 +406,6 @@ def heart():
             return features
     
     input_df = user_input_features()
-    img = Image.open("img\heart-disease.jpg")
     st.image(img, width=500)
     if st.sidebar.button('Predict!'):
         df = input_df
